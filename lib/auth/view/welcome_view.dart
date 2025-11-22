@@ -6,7 +6,7 @@ import 'package:spotify_clone/widget/custom_spacing.dart';
 import '../../core/routes/routes.dart';
 import '../../core/theme/app_font_size.dart';
 import '../../widget/custom_app_text.dart';
-import '../../widget/custom_button.dart';
+import '../widget/custom_login_button.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -31,31 +31,19 @@ class WelcomeScreen extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             VerticalSpace(Get.height * 0.15),
-           Padding(
-                padding:const EdgeInsets.symmetric(horizontal: 40),
-                child: Container(
-                  width: Get.width,
-                  child: CustomButton(
-                    borderRadius: 40,
-                    title: "Sign Up for Free",
-                    textColor: AppColors.black,
-                    backgroundColor: AppColors.green,
-                   onTap:()=> Get.toNamed(AppRoutes.login),
-                  ),
-                ),
+
+            CustomLoginButton(
+              title: "Sign Up for Free",
+              backgroundColor: AppColors.green,
+              borderColor: AppColors.transparent,
+              onTap: () => Get.toNamed(AppRoutes.login),
             ),
-            Padding(
-              padding:const EdgeInsets.symmetric(horizontal: 40),
-              child: Container(
-                width: Get.width,
-                child: CustomButton(
-                  borderRadius: 40,
-                  backgroundColor: AppColors.transparent,
-                  borderColor: AppColors.white,
-                  title: "Log in",
-                  onTap:()=> Get.toNamed(AppRoutes.login),
-                ),
-              ),
+
+            CustomLoginButton(
+              title: "Log in",
+              backgroundColor: AppColors.transparent,
+              borderColor: AppColors.white,
+              onTap: () => Get.toNamed(AppRoutes.login),
             ),
           ],
         ),
