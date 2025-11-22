@@ -9,7 +9,7 @@ import 'package:spotify_clone/widget/custom_spacing.dart';
 
 import '../../../../core/constants/app_images.dart';
 
-import '../../dashboard/data/model/playlist_model.dart';
+import '../data/model/playlist_model.dart';
 import '../view_model/audio_player_view_model.dart';
 import '../view_model/playlist_view_model.dart';
 

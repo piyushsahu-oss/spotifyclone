@@ -32,7 +32,7 @@ class WelcomeScreen extends StatelessWidget {
             ),
             VerticalSpace(Get.height * 0.15),
            Padding(
-                padding: const EdgeInsets.fromLTRB(40, 0, 40, 0),
+                padding:const EdgeInsets.symmetric(horizontal: 40),
                 child: Container(
                   width: Get.width,
                   child: CustomButton(
@@ -45,7 +45,7 @@ class WelcomeScreen extends StatelessWidget {
                 ),
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(40, 0, 40, 0),
+              padding:const EdgeInsets.symmetric(horizontal: 40),
               child: Container(
                 width: Get.width,
                 child: CustomButton(
