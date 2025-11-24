@@ -30,36 +30,30 @@ class LoginOptionsScreen extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             VerticalSpace(Get.height * 0.09),
-
             CustomLoginButton(
               title: "Continue with email",
               backgroundColor: AppColors.green,
               borderColor: AppColors.transparent,
               onTap: () => Get.toNamed(AppRoutes.dashBoard),
             ),
-
-
             CustomLoginButton(
               title: "Continue with Phone number",
               backgroundColor: AppColors.transparent,
               borderColor: AppColors.white,
               onTap: () => Get.toNamed(AppRoutes.dashBoard),
             ),
-
             CustomLoginButton(
               title: "Continue with Google",
               backgroundColor: AppColors.transparent,
               borderColor: AppColors.white,
               onTap: () => Get.toNamed(AppRoutes.dashBoard),
             ),
-
             CustomLoginButton(
               title: "Continue with Facebook",
               backgroundColor: AppColors.transparent,
               borderColor: AppColors.white,
               onTap: () => Get.toNamed(AppRoutes.dashBoard),
             ),
-
             AppText(
               text: "Don't have an account?",
               color: AppColors.white,
